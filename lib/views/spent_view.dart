@@ -184,9 +184,7 @@ class SpentView extends StatelessWidget {
                               width: double.infinity,
                               height: 52,
                               child: ElevatedButton(
-                                onPressed: () {
-                                  AppSnackBar.error(context, " Done");
-                                },
+                                onPressed: controller.submitExpense,
                                 style: ElevatedButton.styleFrom(
                                   backgroundColor: AppColors.secondaryColor,
                                   elevation: 6,
